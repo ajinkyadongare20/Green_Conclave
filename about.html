@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Project Leal</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" href="img/GREEN CONCLAVE - SHUNYA.png" type="image/x-icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Stylesheet Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top" id="navbar">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/Green_Conclave_HR.png" alt="Button Image" class="animated slideInDown">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link text-dark fw-bold">HOME</a>
+                        <a href="about.html" class="nav-item nav-link text-dark fw-bold active">ABOUT</a>
+                        <a href="speakers.html" class="nav-item nav-link text-dark fw-bold">SPEAKERS</a>
+                        <a href="awards.html" class="nav-item nav-link text-dark fw-bold">AWARDS</a>
+                        <a href="sponsors.html" class="nav-item nav-link text-dark fw-bold">SPONSORS</a>
+                        <a href="event.html" class="nav-item nav-link text-dark fw-bold">EVENTS</a>
+                        <a href="contact.html" class="nav-item nav-link text-dark fw-bold">CONTACT US</a>
+                    </div>
+                    <button type="button" class="btn text-dark p-0 d-none d-lg-block" data-bs-toggle="modal"
+                        data-bs-target="#searchModal" style="color: #9CBC41;">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 hero-header">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-center text-start mb-lg-5">
+                    <h1 class="display-5 text-white mb-4 animated slideInRight">
+                        <span class="fw-bold" style="color: #9CBC41;">GREEN</span> <br>
+                        <span class="fw-bold" style="color: #064a56;">CONCLAVE 25</span>
+                    </h1>
+                    <p class="text-dark mb-4 animated fadeInLeftBig">Green Conclave Offers Straightforward
+                        Industrial Refrigeration Solutions Tailored For Efficiency And Reliability. We Streamline
+                        Complex Systems, Ensuring Seamless Performance And Minimal Downtime. Trust Us To Simplify Your
+                        Refrigeration Needs With Innovative Technology And Expert Support For Optimal Cooling And Energy
+                        Savings.</p>
+                </div>
+                <div class="col-lg-6 align-self-end text-center mb-lg-5">
+                    <div class="container d-flex justify-content-end align-items-end p-0">
+                        <div class="card card-index shadow card-boady-index animated slideInLeft">
+                            <div class="card-body">
+                                <h5 class="card-title text-start p-2">Join Conference</h5>
+                                <form>
+                                    <div class="form-group text-start p-2">
+                                        <input type="text" class="form-control" id="name" placeholder="Enter your Name"
+                                            required>
+                                    </div>
+                                    <div class="form-group text-start p-2">
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="Enter your Email" required>
+                                    </div>
+                                    <div class="form-group text-start p-2">
+                                        <input type="text" class="form-control" id="phone"
+                                            placeholder="Enter your Phone" required>
+                                    </div>
+                                    <div class="form-group text-start p-2">
+                                        <input type="text" class="form-control" id="phone"
+                                            placeholder="Enter your Address" required>
+                                    </div>
+                                    <div class="form-check text-start ">
+                                        <input type="checkbox" class="form-check-input" id="terms" required>
+                                        <label class="form-check-label" for="terms">I have read and accept the terms and
+                                            conditions</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-success btn-block mt-3 mx-auto d-block">Join
+                                        now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(20, 24, 62, 0.7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-light p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!--  -->
+    <section class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6 pb-3">
+                    <img src="https://mplussoft.com/images/New-Images/homepage/why-choose-us-bg.png" alt="Building"
+                        class="img-fluid home-index-main">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <h1 class="display-6">About This Event?</h1>
+                    <p>
+                        Green Conclave is a dynamic event focused on fostering sustainable practices and environmental
+                        innovation. It brings together thought leaders, industry experts, and activists to discuss
+                        cutting-edge solutions for a greener future. Through insightful discussions, workshops, and
+                        networking opportunities, participants gain valuable knowledge on eco-friendly technologies,
+                        renewable energy, and sustainable business practices. The event provides a platform to
+                        collaborate
+                        on initiatives that drive environmental change and promote a more sustainable and eco-conscious
+                        world for future generations.
+                    </p>
+                    <div class="text-start">
+                        <button class="btn btn-success btn-block mt-3 ms-0">Book now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+
+    <!--  -->
+    <section class="container py-5">
+        <div>
+            <h2 class="text-center mb-4">Why This Conference Is Best For Customer</h2>
+            <p class="text-center mb-5">
+                Your content goes here. Edit or remove this text inline or in the module Content settings. You can also
+                style
+                every aspect of this content in the module Design settings and even apply custom CSS to this text in the
+                module
+                Advanced settings.
+            </p>
+        </div>
+
+        <!-- Bootstrap Grid System -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <!-- Great Speakers -->
+            <div class="col px-4">
+                <div class="card hover-card border-0 rounded-0">
+                    <img src="img/about_images/loud-speaker.png" class="card-img-top mx-auto mt-3" alt="Great Speakers"
+                        style="width: 50px; height: 50px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Great Speakers</h5>
+                        <p class="card-text text-muted">Your content goes here. Edit or remove this text inline or in
+                            the module Content settings.</p>
+                        <a href="#" class="text-primary fw-bold text-decoration-none">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learn New Skills -->
+            <div class="col px-4">
+                <div class="card hover-card border-0 rounded-0">
+                    <img src="img/about_images/capability.png" class="card-img-top mx-auto mt-3" alt="Learn New Skills"
+                        style="width: 50px; height: 50px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Learn New Skills</h5>
+                        <p class="card-text text-muted">Your content goes here. Edit or remove this text inline or in
+                            the module Content settings.</p>
+                        <a href="#" class="text-primary fw-bold text-decoration-none">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Participants -->
+            <div class="col px-4">
+                <div class="card hover-card border-0 rounded-0">
+                    <img src="img/about_images/group.png" class="card-img-top mx-auto mt-3" alt="Participants"
+                        style="width: 50px; height: 50px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Participants</h5>
+                        <p class="card-text text-muted">Your content goes here. Edit or remove this text inline or in
+                            the module Content settings.</p>
+                        <a href="#" class="text-primary fw-bold text-decoration-none">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proud Sponsors -->
+            <div class="col px-4">
+                <div class="card hover-card border-0 rounded-0">
+                    <img src="img/about_images/sponsars.png" class="card-img-top mx-auto mt-3" alt="Proud Sponsors"
+                        style="width: 50px; height: 50px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Proud Sponsors</h5>
+                        <p class="card-text text-muted">Your content goes here. Edit or remove this text inline or in
+                            the module Content settings.</p>
+                        <a href="#" class="text-primary fw-bold text-decoration-none">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid mt-5 pb-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <!-- Left Section -->
+                <div class="col-lg-6 wow fadeInLeftBig" data-wow-delay="0.1s">
+                    <h1>Business With Sustainable Green Solutions</h1>
+                    <p class="mx-auto" style="max-width: 800px;">
+                        At Green Conclave, we understand that every business is unique, which is why we offer a range of
+                        sustainable
+                        solutions designed to address your specific environmental challenges and goals.
+                    </p>
+
+                    <div class="row g-4 py-3">
+                        <!-- First Item -->
+                        <div class="col-12 d-flex align-items-start gap-3 mb-4">
+                            <img src="img/testing_images/team-1.jpg" alt="Energy Efficient Solutions" class="circle-img"
+                                style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;">
+                            <div>
+                                <h5>Energy Efficiency Solutions</h5>
+                                <p class="mb-0">
+                                    Optimize your energy usage and reduce costs with our comprehensive energy-efficient
+                                    solutions that
+                                    promote sustainability.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Second Item -->
+                        <div class="col-12 d-flex align-items-start gap-3 mb-4">
+                            <img src="img/testing_images/team-2.jpg" alt="Renewable Energy Systems" class="circle-img"
+                                style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;">
+                            <div>
+                                <h5>Renewable Energy Systems</h5>
+                                <p class="mb-0">
+                                    Shift to cleaner energy with our tailored renewable energy solutions, helping you
+                                    achieve a
+                                    greener, more sustainable future.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Third Item -->
+                        <div class="col-12 d-flex align-items-start gap-3">
+                            <img src="img/testing_images/team-3.jpg" alt="Sustainability Consulting" class="circle-img"
+                                style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;">
+                            <div>
+                                <h5>Sustainability Consulting</h5>
+                                <p class="mb-0">
+                                    Leverage our expertise to implement eco-friendly practices and strategies that drive
+                                    both environmental
+                                    and business success.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Section -->
+                <div class="col-lg-6 position-relative">
+                    <img src="img/about_images/work-bg.png" alt="" class="bg-image shape-animaiton4">
+
+                    <div class="row g-4">
+                        <!-- Top Row -->
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeInDownBig" data-wow-delay="0.1s">
+                                    <div class="d-flex flex-column justify-content-center text-center">
+                                        <img src="img/testing_images/team-1.jpg" alt="Service Icon"
+                                            class="img-fluid p-3">
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeInDownBig" data-wow-delay="0.5s">
+                                    <div class="d-flex flex-column justify-content-center text-center">
+                                        <img src="img/testing_images/team-2.jpg" alt="Service Icon"
+                                            class="img-fluid p-3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Row -->
+                        <div class="col-md-6 pt-md-4">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeInDownBig" data-wow-delay="0.3s">
+                                    <div class="d-flex flex-column justify-content-center text-center">
+                                        <img src="img/testing_images/team-3.jpg" alt="Service Icon"
+                                            class="img-fluid p-3">
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeInDownBig" data-wow-delay="0.7s">
+                                    <div class="d-flex flex-column justify-content-center text-center">
+                                        <img src="img/testing_images/team-4.jpg" alt="Service Icon"
+                                            class="img-fluid p-3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Start Mission Vision Values -->
+    <section class="bg-light-green py-5">
+        <div class="container">
+            <!-- Green Conclave Overview -->
+            <p class="green-conclave-heading p-4 text-center mx-auto my-5 shadow-sm" style="max-width: 800px;">
+                <strong>Green Conclave</strong> is an annual event designed to foster dialogue and action towards
+                sustainability in the HVAC, refrigeration, and cold chain industries. It serves as a platform for
+                thought leaders, industry professionals, and policymakers to share ideas, showcase innovations, and
+                collaborate for a greener future.
+            </p>
+
+            <!-- Mission Section -->
+            <div class="card mb-4 mission-card rounded-0">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3 mission-header">
+                        <img src="img/about_images/mission.png" alt="Mission Image" class="img-fluid"
+                            style="width: 50px; height: 50px;">
+                        <h5 class="card-title mission-title ms-3 text-success">Our Mission: Building a Net Zero Future
+                        </h5>
+                    </div>
+                    <p>
+                        The mission of Green Conclave is to advance sustainable practices across industries by promoting
+                        energy-efficient solutions, reducing environmental impact, and fostering collaboration among
+                        stakeholders. Through interactive sessions, live demonstrations, and insightful discussions,
+                        GC25 will inspire action toward achieving Net Zero across sectors.
+                    </p>
+                    <p>We are committed to the following principles in delivering our mission:</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Promote the use of renewable energy sources to reduce
+                            carbon footprints.</li>
+                        <li><i class="fas fa-check-circle"></i> Foster innovation in green technology to address
+                            environmental challenges.</li>
+                        <li><i class="fas fa-check-circle"></i> Empower organizations to embrace sustainable practices
+                            for long-term environmental benefits.</li>
+                        <li><i class="fas fa-check-circle"></i> Provide expert solutions that improve energy efficiency
+                            and reduce operational costs.</li>
+                        <li><i class="fas fa-check-circle"></i> Drive global awareness around sustainability and
+                            eco-friendly living.</li>
+                        <li><i class="fas fa-check-circle"></i> Collaborate with partners to create green initiatives
+                            for a better future.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Vision Section -->
+            <div class="card mb-4 vision-card rounded-0">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3 vision-header">
+                        <img src="img/about_images/visionary.png" alt="Vision Image" class="img-fluid"
+                            style="width: 50px; height: 50px;">
+                        <h5 class="card-title vision-title ms-3 text-success">Our Vision: Shaping a Sustainable Tomorrow
+                        </h5>
+                    </div>
+                    <p>
+                        Green Conclave envisions a future where the HVAC, refrigeration, and cold chain sectors play a
+                        crucial role in achieving a sustainable, Net Zero economy. The event seeks to address real-world
+                        challenges, provide solutions, and create actionable roadmaps for businesses, industries, and
+                        government entities to contribute to environmental preservation and resource efficiency.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Values Section -->
+            <div class="card mb-4 values-card rounded-0">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3 values-header">
+                        <img src="img/about_images/values.png" alt="Values Image" class="img-fluid"
+                            style="width: 50px; height: 50px;">
+                        <h5 class="card-title values-title ms-3 text-success">Core Values</h5>
+                    </div>
+                    <p>
+                        Green Conclave's core values are centered around sustainability, collaboration, and action. We
+                        believe that every step taken towards a greener future must be rooted in integrity and
+                        innovative thinking, empowering industries and governments to act with responsibility and vision
+                        for a sustainable tomorrow.
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Integrity: We maintain transparency, trust, and
+                            accountability in all of our business practices.</li>
+                        <li><i class="fas fa-check-circle"></i> Collaboration: We believe in working together with
+                            stakeholders to achieve our sustainability goals.</li>
+                        <li><i class="fas fa-check-circle"></i> Sustainability: Our solutions aim to protect the
+                            environment, conserve natural resources, and reduce waste.</li>
+                        <li><i class="fas fa-check-circle"></i> Innovation: We strive to develop creative solutions that
+                            drive positive environmental change.</li>
+                        <li><i class="fas fa-check-circle"></i> Excellence: We are committed to delivering high-quality
+                            solutions that exceed expectations.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Mission Vision Values  -->
+
+
+    <!-- Start Feature -->
+    <div class="container-fluid p-5 px-3">
+        <h2 class="fw-bold about-card-heading" style="text-align: center;">Key Topics for GC25</h2>
+        <div class="row mt-4">
+            <div class="col-md-4 my-2">
+                <div class="about-feature wow fadeIn" data-wow-delay="0.2s">
+                    <img src="img/about_images/feature/app-development.jpg" alt="Extensive Experience"
+                        class="card-vision-icon">
+                    <span class="feature-text">Modern Trends in HVAC & Refrigeration</span>
+                </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <div class="about-feature wow fadeIn" data-wow-delay="0.5s">
+                    <img src="img/about_images/feature/coding (1).png" alt="Personalized Approach"
+                        class="card-vision-icon">
+                    <span class="feature-text">Energy-efficient Cold Chain Solutions</span>
+                </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <div class="about-feature wow fadeIn" data-wow-delay="0.8s">
+                    <img src="img/about_images/feature/erp.png" alt="Cutting-edge Technology" class="card-vision-icon">
+                    <span class="feature-text">Reducing Carbon Emissions through Green Technologies</span>
+                </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <div class="about-feature wow fadeIn" data-wow-delay="1.1s">
+                    <img src="img/about_images/feature/hvac.png" alt="Global Footprint" class="card-vision-icon">
+                    <span class="feature-text">Water and Waste Management in Refrigeration</span>
+                </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <div class="about-feature wow fadeIn" data-wow-delay="1.4s">
+                    <img src="img/about_images/feature/save-time.png" alt="Comprehensive Project Management"
+                        class="card-vision-icon">
+                    <span class="feature-text">Collaborative Efforts towards Net Zero</span>
+                </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <div class="about-feature wow fadeIn" data-wow-delay="1.7s">
+                    <img src="img/about_images/feature/sw_conslutancy.jpg"
+                        alt="Sustainability and Environmental Consciousness" class="card-vision-icon">
+                    <span class="feature-text">Innovative Cooling Technologies for a Sustainable Future</span>
+                </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <div class="about-feature wow fadeIn" data-wow-delay="2s">
+                    <img src="img/about_images/feature/sw_implemention.jpg" alt="Efficient Supply Chain Management"
+                        class="card-vision-icon">
+                    <span class="feature-text">Digital Transformation in HVAC Systems</span>
+                </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <div class="about-feature wow fadeIn" data-wow-delay="2.3s">
+                    <img src="img/about_images/sponsars.png" alt="Innovative Design Solutions" class="card-vision-icon">
+                    <span class="feature-text">Circular Economy in Refrigeration</span>
+                </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <div class="about-feature wow fadeIn" data-wow-delay="2.6s">
+                    <img src="img/about_images/mission.png" alt="Advanced Automation Integration"
+                        class="card-vision-icon">
+                    <span class="feature-text">Policy and Regulations for Net Zero Goals</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Feature  -->
+
+
+    <!-- FAQs Start -->
+    <div class="container-fluid bg-light-green py-5">
+        <div class="container pb-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="mb-4">Frequently Asked Questions</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionGreenConclave1">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    What is the Green Conclave?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionGreenConclave1">
+                                <div class="accordion-body">
+                                    The Green Conclave is an initiative focused on promoting sustainable practices,
+                                    eco-friendly innovations, and environmental awareness.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Who can participate in the Green Conclave?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionGreenConclave1">
+                                <div class="accordion-body">
+                                    Anyone passionate about sustainability, including individuals, businesses, and
+                                    organizations, can participate in the Green Conclave.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.3s">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What activities are included in the Green Conclave?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionGreenConclave1">
+                                <div class="accordion-body">
+                                    Activities include workshops, panel discussions, networking sessions, and
+                                    exhibitions showcasing green technologies and practices.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    How can I register for the Green Conclave?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionGreenConclave1">
+                                <div class="accordion-body">
+                                    You can register online via our official website by filling out the registration
+                                    form and submitting the required details.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionGreenConclave2">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Are there any fees to attend the Green Conclave?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionGreenConclave2">
+                                <div class="accordion-body">
+                                    The event may have free and paid sessions, depending on the activities and
+                                    workshops. Details will be shared during registration.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.6s">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    How does the Green Conclave promote sustainability?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionGreenConclave2">
+                                <div class="accordion-body">
+                                    By showcasing sustainable solutions, encouraging eco-conscious practices, and
+                                    fostering collaboration for a greener future.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.7s">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    What industries are involved in the Green Conclave?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                data-bs-parent="#accordionGreenConclave2">
+                                <div class="accordion-body">
+                                    Industries like renewable energy, sustainable construction, waste management, and
+                                    eco-friendly manufacturing participate in the conclave.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.8s">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    How can I volunteer for the Green Conclave?
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionGreenConclave2">
+                                <div class="accordion-body">
+                                    Volunteers can apply through the website by submitting their profiles and selecting
+                                    preferred roles during the event.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQs End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn px-2" data-wow-delay="0.1s">
+                    <h2 class="mb-0 text-white">
+                        GREEN <br>
+                        <span class="fw-bold" style="color: #ffb905;">CONCLAVE 25</span>
+                    </h2>
+                    <p class="mb-0 pt-2">Green Conclave is dedicated to delivering sustainable, eco-friendly solutions,
+                        fostering innovation, and driving positive environmental impact while promoting growth,
+                        efficiency, and a greener future for communities and businesses worldwide.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeInLeftBig" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">Popular Link</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="about.html">Projects</a>
+                    <a class="btn btn-link" href="service.html">Services</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="1.3s">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <a class="btn btn-link" href="">Sustainable Energy Solutions</a>
+                    <a class="btn btn-link" href="">Eco-Friendly Consulting</a>
+                    <a class="btn btn-link" href="">Green Building Design</a>
+                    <a class="btn btn-link" href="">Renewable Energy Integration</a>
+                    <a class="btn btn-link" href="">Environmental Impact Assessments</a>
+                    <a class="btn btn-link" href="">Waste Management Solutions</a>
+                    <a class="btn btn-link" href="">Carbon Footprint Reduction Plans</a>
+
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="1.8s">
+                    <h5 class="text-white mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Office no 90–92, 4th Floor, 'D' Wing, K K Market,
+                        Pune-Satara Road, Dhankawadi, Pune 411 043</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+91 9922954841</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+91 9922954842</p>
+                    <p><i class="fa fa-envelope me-3"></i>coordinator@greenconclave.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.linkedin.com/company/leal-software-solution/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/LealSoftwareSolution"
+                            target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.youtube.com/@lealsoftwaresolutionpvtltd8833" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/smurkewar/"
+                            target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="https://wa.me/7410016111" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="index.html">All Right Reserved.</a>
+                        | Designed By Leal Software Solution Pvt Ltd<a class="border-bottom"
+                            href="https://www.lealsolution.com/" target="_blank"></a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FAQs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
