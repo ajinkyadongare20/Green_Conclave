@@ -326,6 +326,13 @@ div#navbar {
     background-color: #707d9e;
     position: relative;
 }
+.award-container {
+    background: url('../img/3forleal.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #707d9e;
+    position: relative;
+}
 
 .opacity {
     background: rgba(25, 135, 84, 0.9);
@@ -470,8 +477,8 @@ div#navbar {
 }
 
 .award-icon {
-    width: 75px;
-    height: 75px;
+    width: 55px;
+    height: 55px;
     margin-bottom: 15px;
 }
 
@@ -604,11 +611,228 @@ div#navbar {
     transform: scale(1.1);
     cursor: pointer;
 }
+
 .card-vision-icon {
     width: 50px;
     height: 50px;
     margin-right: 10px;
 }
+
+
+/*** Code For Spekers ***/
+
+.speaker-card {
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.speaker-img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.speaker-role {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.speaker-description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.social-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: gray;
+}
+
+/*** Css Code For Awards Page  ***/
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 95%;
+    background-color: #007bff;
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.year-wrapper {
+    position: relative;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.year-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-year {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.timeline-item:nth-child(1) .timeline-year {
+    background-color: #28a745;
+}
+.timeline-item:nth-child(1) .year-title {
+    color: #28a745;
+}
+
+.timeline-item:nth-child(2) .timeline-year {
+    background-color: #17a2b8;
+}
+
+.timeline-item:nth-child(3) .timeline-year {
+    background-color: #ffc107;
+}
+
+.timeline-item:nth-child(4) .timeline-year {
+    background-color: #6f42c1;
+}
+
+.timeline-item:nth-child(5) .timeline-year {
+    background-color: #dc3545;
+}
+
+.timeline-item:nth-child(6) .timeline-year {
+    background-color: #007bff;
+}
+
+.timeline-item:nth-child(7) .timeline-year {
+    background-color: #20c997;
+}
+
+.timeline-item:nth-child(8) .timeline-year {
+    background-color: #fd7e14;
+}
+
+.timeline-item:nth-child(9) .timeline-year {
+    background-color: #6610f2;
+}
+
+.timeline-item:nth-child(10) .timeline-year {
+    background-color: #e83e8c;
+}
+
+.timeline-item:nth-child(11) .timeline-year {
+    background-color: #6c757d;
+}
+
+.timeline-item:nth-child(12) .timeline-year {
+    background-color: #198754;
+}
+
+.timeline-item:nth-child(13) .timeline-year {
+    background-color: #0dcaf0;
+}
+
+.timeline-item:nth-child(14) .timeline-year {
+    background-color: #aa0987;
+}
+
+.timeline-item:nth-child(15) .timeline-year {
+    background-color: #ff7f50;
+}
+
+.content {
+    background-color: #ffffff;
+    padding: 1rem;
+    width: 50%;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item:nth-child(even) .content {
+    text-align: right;
+}
+
+
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px;
+        transform: none;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-item:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .year-wrapper {
+        margin-left: 20px;
+    }
+
+    .content {
+        width: calc(100% - 0px);
+    }
+
+    .timeline-year {
+        left: 80px;
+    }
+    .year-bg {
+        left: 80px;
+    }
+    .timeline-item:nth-child(even) .content {
+        text-align: left;
+    }    
+}
+.hover-effect:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 
 
 /*** FAQs ***/
