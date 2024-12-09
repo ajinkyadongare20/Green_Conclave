@@ -78,42 +78,10 @@ function showContent(day) {
 }
 
 //**  A code for event 1 page for YouTube Video ***//
-const videoSection = document.getElementById('videoSection');
 const youtubeVideo = document.getElementById('youtubeVideo');
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        const videoUrl = "https://www.youtube.com/embed/-_-hezIflJo?autoplay=1&mute=1&si=5KAMkeEa6nSpUQ-I";        
-        if (entry.isIntersecting) {
-            youtubeVideo.src = videoUrl;
-        } else {
-            youtubeVideo.src = "";
-        }
-    });
-}, { threshold: 0.5 });
-
-observer.observe(videoSection);
-
-// A Code for Utube Videso
-document.addEventListener("DOMContentLoaded", function () {
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3, 
-        spaceBetween: 20,
-        loop: true, 
-        autoplay: {
-            delay: 3000, 
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        breakpoints: {
-            320: { slidesPerView: 1 }, 
-            768: { slidesPerView: 2 }, 
-            1024: { slidesPerView: 3 } // 3 videos per view on large screens
-        }
-    });
+youtubeVideo.addEventListener('click', () => {
+    const videoUrl = "https://www.youtube.com/embed/-_-hezIflJo?autoplay=1";
+    youtubeVideo.src = videoUrl;
 });
-
 
