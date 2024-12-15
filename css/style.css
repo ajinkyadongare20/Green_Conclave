@@ -133,6 +133,7 @@ div#navbar {
 .navbar-dark .navbar-brand {
     color: #fff;
     width: 25%;
+    padding: 0px;
 }
 
 .navbar-brand img {
@@ -201,7 +202,7 @@ button.navbar-toggler.ms-auto.me-0 {
 @media (max-width: 991.98px) {
     .navbar .navbar-nav {
         padding: 0 15px;
-        background: rgb(50, 124, 50);
+        background: rgb(255, 255, 255);
     }
 
     .navbar .navbar-nav .nav-link {
@@ -242,7 +243,9 @@ button.navbar-toggler.ms-auto.me-0 {
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
         url(../img/bg-hero.png) center center no-repeat;
     background-size: cover;
+    /* height: 100vh; */
 }
+
 
 .hero-header .breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);
@@ -268,6 +271,7 @@ button.navbar-toggler.ms-auto.me-0 {
 
 @media (max-width: 420px) {
     .hero-header {
+        height: auto;
         padding-top: 50px;
     }
 
@@ -333,8 +337,9 @@ button.navbar-toggler.ms-auto.me-0 {
 /* index page feature code */
 .home-index-main {
     height: 100%;
-    width: 90%;
+    width: 100%;
     object-fit: cover;
+    border: 1px solid rgb(68, 68, 68);
 }
 
 .myhome-container {
@@ -379,6 +384,16 @@ button.navbar-toggler.ms-auto.me-0 {
 .plan-body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.qr-card {
+    box-shadow: 0 8px 20px rgba(134, 134, 134, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .qr-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
 
 /*  */
 .tab-buttons button {
@@ -434,6 +449,9 @@ button.navbar-toggler.ms-auto.me-0 {
     .schedule-desc {
         text-align: left;
     }
+    .hero-home-desc {
+        padding-top: 20px;
+    }
 }
 
 /*  */
@@ -452,7 +470,8 @@ button.navbar-toggler.ms-auto.me-0 {
 .pricing-card:hover .card-title,
 .pricing-card:hover h2,
 .pricing-card:hover p,
-.pricing-card:hover li {
+.pricing-card:hover li,
+.pricing-card:hover h6 {
     color: #fff !important;
 }
 
@@ -696,45 +715,45 @@ button.navbar-toggler.ms-auto.me-0 {
 }
 
 /*** Css Code For Awards Page  ***/
-.timeline {
+.awards-timeline {
     position: relative;
     padding: 2rem 0;
 }
 
-.timeline::before {
+.awards-timeline::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 40px;
     left: 50%;
     transform: translateX(-50%);
     width: 4px;
-    height: 95%;
-    background-color: #007bff;
+    height: 85%;
+    background: rgba(25, 135, 84, 0.9);
 }
 
-.timeline-item {
+.award-item {
     position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
-.timeline-item:nth-child(even) {
+.award-item:nth-child(even) {
     flex-direction: row-reverse;
 }
 
-.year-wrapper {
+.award-badge-wrapper {
     position: relative;
     z-index: 1;
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.year-bg {
+.award-badge-bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -745,84 +764,56 @@ button.navbar-toggler.ms-auto.me-0 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.timeline-year {
+.award-badge {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    font-size: 1.25rem;
+    width: 120px;
+    height: 120px;
+    border-radius: 60%;
+    font-size: 18px;
     font-weight: bold;
     color: #fff;
+    text-align: center;
+    padding: 70px;
 }
-
-.timeline-item:nth-child(1) .timeline-year {
+.award-title {
+    font-size: 20px;
+}
+.award-item:nth-child(1) .award-badge {
     background-color: #28a745;
 }
 
-.timeline-item:nth-child(1) .year-title {
-    color: #28a745;
-}
-
-.timeline-item:nth-child(2) .timeline-year {
+.award-item:nth-child(2) .award-badge {
     background-color: #17a2b8;
 }
 
-.timeline-item:nth-child(3) .timeline-year {
+.award-item:nth-child(3) .award-badge {
     background-color: #ffc107;
 }
 
-.timeline-item:nth-child(4) .timeline-year {
+.award-item:nth-child(4) .award-badge {
     background-color: #6f42c1;
 }
 
-.timeline-item:nth-child(5) .timeline-year {
+.award-item:nth-child(5) .award-badge {
     background-color: #dc3545;
 }
 
-.timeline-item:nth-child(6) .timeline-year {
+.award-item:nth-child(6) .award-badge {
     background-color: #007bff;
 }
 
-.timeline-item:nth-child(7) .timeline-year {
+.award-item:nth-child(7) .award-badge {
     background-color: #20c997;
 }
 
-.timeline-item:nth-child(8) .timeline-year {
+.award-item:nth-child(8) .award-badge {
     background-color: #fd7e14;
 }
 
-.timeline-item:nth-child(9) .timeline-year {
-    background-color: #6610f2;
-}
-
-.timeline-item:nth-child(10) .timeline-year {
-    background-color: #e83e8c;
-}
-
-.timeline-item:nth-child(11) .timeline-year {
-    background-color: #6c757d;
-}
-
-.timeline-item:nth-child(12) .timeline-year {
-    background-color: #198754;
-}
-
-.timeline-item:nth-child(13) .timeline-year {
-    background-color: #0dcaf0;
-}
-
-.timeline-item:nth-child(14) .timeline-year {
-    background-color: #aa0987;
-}
-
-.timeline-item:nth-child(15) .timeline-year {
-    background-color: #ff7f50;
-}
-
-.content {
+.award-content {
     background-color: #ffffff;
     padding: 1rem;
     width: 50%;
@@ -830,46 +821,46 @@ button.navbar-toggler.ms-auto.me-0 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.timeline-item:nth-child(even) .content {
+.award-item:nth-child(even) .award-content {
     text-align: right;
 }
 
-
 @media (max-width: 768px) {
-    .timeline::before {
+    .awards-timeline::before {
         left: 20px;
         transform: none;
     }
 
-    .timeline-item {
+    .award-item {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .timeline-item:nth-child(even) {
+    .award-item:nth-child(even) {
         flex-direction: column;
     }
 
-    .year-wrapper {
+    .award-badge-wrapper {
         margin-left: 20px;
     }
 
-    .content {
+    .award-content {
         width: calc(100% - 0px);
     }
 
-    .timeline-year {
+    .award-badge {
         left: 80px;
     }
 
-    .year-bg {
+    .award-badge-bg {
         left: 80px;
     }
 
-    .timeline-item:nth-child(even) .content {
+    .award-item:nth-child(even) .award-content {
         text-align: left;
     }
 }
+
 
 .hover-effect:hover {
     transform: translateY(-10px);
@@ -987,6 +978,15 @@ button.navbar-toggler.ms-auto.me-0 {
 
 .owl-carousel .owl-dots .owl-dot.active {
     background: #555; 
+}
+.owl-dots {
+    margin-top: 26px;
+    text-align: center;
+}
+@media (max-width: 420px) {
+    .owl-dots {
+       display: none;
+    }
 }
 
 
