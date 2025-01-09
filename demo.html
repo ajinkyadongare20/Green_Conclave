@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Project Leal</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" href="img/GREEN CONCLAVE - SHUNYA.png" type="image/x-icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Stylesheet Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top" id="navbar">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/Green_Conclave_HR.png" alt="Button Image" class="animated slideInDown">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link text-dark fw-bold active">HOME</a>
+                        <a href="about.html" class="nav-item nav-link text-dark fw-bold">ABOUT</a>
+                        <a href="speakers.html" class="nav-item nav-link text-dark fw-bold">SPEAKERS</a>
+                        <a href="awards.html" class="nav-item nav-link text-dark fw-bold">AWARDS</a>
+                        <a href="sponsors.html" class="nav-item nav-link text-dark fw-bold">SPONSORS</a>
+                        <a href="event.html" class="nav-item nav-link text-dark fw-bold">EVENTS</a>
+                        <a href="contact.html" class="nav-item nav-link text-dark fw-bold">CONTACT US</a>
+
+                    </div>
+                    <button type="button" class="btn text-dark p-0 d-none d-lg-block" data-bs-toggle="modal"
+                        data-bs-target="#searchModal" style="color: #9CBC41;">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 hero-header">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-center text-start mb-lg-5">
+                    <h1 class="display-5 text-white mb-4 animated slideInRight">
+                        <span class="fw-bold" style="color: #9CBC41;">GREEN</span> <br>
+                        <span class="fw-bold" style="color: #064a56;">CONCLAVE 25</span>
+                    </h1>
+                    <p class="text-dark mb-4 animated fadeInLeftBig">Green Conclave Offers Straightforward
+                        Industrial Refrigeration Solutions Tailored For Efficiency And Reliability. We Streamline
+                        Complex Systems, Ensuring Seamless Performance And Minimal Downtime. Trust Us To Simplify Your
+                        Refrigeration Needs With Innovative Technology And Expert Support For Optimal Cooling And Energy
+                        Savings.</p>
+                </div>
+                <div class="col-lg-6 align-self-end text-center mb-lg-5 pb-5">
+                    <div class="container d-flex justify-content-end align-items-end p-0">
+                        <div class="card card-index shadow card-boady-index animated slideInLeft">
+                            <div class="card-body">
+                                <h5 class="card-title text-start p-2">Join Conference</h5>
+                                <form>
+                                    <div class="form-group text-start p-2">
+                                        <input type="text" class="form-control" id="name" placeholder="Enter your Name"
+                                            required>
+                                    </div>
+                                    <div class="form-group text-start p-2">
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="Enter your Email" required>
+                                    </div>
+                                    <div class="form-group text-start p-2">
+                                        <input type="text" class="form-control" id="phone"
+                                            placeholder="Enter your Phone" required>
+                                    </div>
+                                    <div class="form-group text-start p-2">
+                                        <input type="text" class="form-control" id="phone"
+                                            placeholder="Enter your Address" required>
+                                    </div>
+                                    <div class="form-check text-start ">
+                                        <input type="checkbox" class="form-check-input" id="terms" required>
+                                        <label class="form-check-label" for="terms">I have read and accept the terms and
+                                            conditions</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-success btn-block mt-3 mx-auto d-block">Join
+                                        now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(20, 24, 62, 0.7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-light p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!--Start Introduction Section -->
+    <section class="bg-light py-5 text-center">
+        <div class="container text-start text-lg-center px-3">
+            <!-- Welcome Title -->
+            <h2 class="fw-semibold text-success mb-4">Welcome to Green Conclave 2025 (GC25)</h2>
+            <!-- Event Details -->
+            <p class="mb-4 fs-6">
+                Green Conclave, hosted by the <strong>ISHRAE Pune Chapter</strong>, is India’s premier event on
+                sustainable HVAC, refrigeration, and cold chain technologies.
+                Entering its third edition, GC25 is centered around the theme <strong>“Shunya - Our Dharma to Net
+                    Zero.”</strong>
+            </p>
+            <p class="mb-5 fs-6">
+                This year’s conclave gathers industry experts, policymakers, & innovators to discuss modern trends and
+                strategies for achieving Net Zero.
+            </p>
+            <!-- About the Theme -->
+            <div>
+                <h2 class="fw-semibold text-primary mb-3">Shunya - Our Dharma to Net Zero</h2>
+                <p class="text-muted fs-6">
+                    GC25 explores Net Zero as both a goal and a responsibility, focusing on <strong>Air, Water, Fire,
+                        Earth,</strong> and <strong>Aether</strong>—the five environmental elements.
+                    This theme underscores our commitment to driving sustainability, fostering collaboration, and
+                    promoting a holistic approach toward achieving Net Zero.
+                </p>
+                <p class="text-muted fs-6">
+                    Together, we will address key challenges in energy efficiency, waste reduction, and carbon
+                    neutrality.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--End Introduction Section -->
+
+
+    <!-- Start Section  -->
+    <section class="bg-primary myhome-container">
+        <div class="opacity">
+            <div class="container pb-5">
+                <div class="text-center mb-5">
+                    <h2 class="text-white">Key Features of Green Conclave</h2>
+                    <p class="text-white">Efficient environmental solutions and sustainability for a greener future.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-start p-3 border rounded-0 shadow-sm"
+                            style="background-color: #f8fbff; height: auto;">
+                            <div class="me-3"
+                                style="flex-shrink: 0; width: 60px; height: 60px; background-color: #eef7ff; display: flex; justify-content: center; align-items: center; border-radius: 5px;">
+                                <img src="img/index_images/app-development.jpg" alt="Service Icon"
+                                    style="width: 40px; height: 40px;">
+                            </div>
+                            <div>
+                                <h5 class="mb-2">Sustainable Task Management</h5>
+                                <p class="mb-2">Green Conclave allows you to efficiently manage tasks while ensuring
+                                    sustainable practices are followed throughout the process.</p>
+                                <a href="#" class="text-primary text-decoration-none fw-bold">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-start p-3 border rounded-0 shadow-sm"
+                            style="background-color: #f8fbff; height: auto;">
+                            <div class="me-3"
+                                style="flex-shrink: 0; width: 60px; height: 60px; background-color: #eef7ff; display: flex; justify-content: center; align-items: center; border-radius: 5px;">
+                                <img src="img/index_images/coding (1).png" alt="Service Icon"
+                                    style="width: 40px; height: 40px;">
+                            </div>
+                            <div>
+                                <h5 class="mb-2">Eco-friendly Calendar Integration</h5>
+                                <p class="mb-2">Integrate your tasks seamlessly with eco-friendly calendar management to
+                                    stay aligned with green deadlines and events.</p>
+                                <a href="#" class="text-primary text-decoration-none fw-bold">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-start p-3 border rounded-0 shadow-sm"
+                            style="background-color: #f8fbff; height: auto;">
+                            <div class="me-3"
+                                style="flex-shrink: 0; width: 60px; height: 60px; background-color: #eef7ff; display: flex; justify-content: center; align-items: center; border-radius: 5px;">
+                                <img src="img/index_images/completed-task.png" alt="Service Icon"
+                                    style="width: 40px; height: 40px;">
+                            </div>
+                            <div>
+                                <h5 class="mb-2">Green Dashboards</h5>
+                                <p class="mb-2">Personalized dashboards to track sustainable project progress,
+                                    environmental goals, and team activities.</p>
+                                <a href="#" class="text-primary text-decoration-none fw-bold">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-start p-3 border rounded-0 shadow-sm"
+                            style="background-color: #f8fbff; height: auto;">
+                            <div class="me-3"
+                                style="flex-shrink: 0; width: 60px; height: 60px; background-color: #eef7ff; display: flex; justify-content: center; align-items: center; border-radius: 5px;">
+                                <img src="img/index_images/sw_implemention.jpg" alt="Service Icon"
+                                    style="width: 40px; height: 40px;">
+                            </div>
+                            <div>
+                                <h5 class="mb-2">Eco-conscious Reporting</h5>
+                                <p class="mb-2">Generate reports focused on environmental impact, project
+                                    sustainability, and performance metrics.</p>
+                                <a href="#" class="text-primary text-decoration-none fw-bold">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-start p-3 border rounded-0 shadow-sm"
+                            style="background-color: #f8fbff; height: auto;">
+                            <div class="me-3"
+                                style="flex-shrink: 0; width: 60px; height: 60px; background-color: #eef7ff; display: flex; justify-content: center; align-items: center; border-radius: 5px;">
+                                <img src="img/index_images/sw_training.jpg" alt="Service Icon"
+                                    style="width: 40px; height: 40px;">
+                            </div>
+                            <div>
+                                <h5 class="mb-2">Collaborate for Sustainability</h5>
+                                <p class="mb-2">Collaborate in real-time with the team using tools that focus on
+                                    sustainability and eco-friendly solutions.</p>
+                                <a href="#" class="text-primary text-decoration-none fw-bold">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-start p-3 border rounded-0 shadow-sm"
+                            style="background-color: #f8fbff; height: auto;">
+                            <div class="me-3"
+                                style="flex-shrink: 0; width: 60px; height: 60px; background-color: #eef7ff; display: flex; justify-content: center; align-items: center; border-radius: 5px;">
+                                <img src="img/index_images/visionary.png" alt="Service Icon"
+                                    style="width: 40px; height: 40px;">
+                            </div>
+                            <div>
+                                <h5 class="mb-2">Eco-friendly Notifications</h5>
+                                <p class="mb-2">Stay updated with automated notifications that promote sustainability
+                                    and environmental awareness.</p>
+                                <a href="#" class="text-primary text-decoration-none fw-bold">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section -->
+
+
+    <!-- About Green Conclave -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6 pb-3">
+                <img src="https://mplussoft.com/images/New-Images/homepage/why-choose-us-bg.png" alt="Building"
+                    class="img-fluid home-index-main">
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+                <h1 class="display-6">What is all about us?</h1>
+                <p>
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia. It is
+                    a paradisiac country, in which roasted parts of sentences fly into your mouth.
+                </p>
+                <p>
+                    On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would
+                    have been rewritten a thousand times and everything that was left from its origin would be the word
+                    "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing
+                    the copy said could convince her and so it didn't take long until a few insidious Copy Writers
+                    ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they
+                    abused her for their.
+                </p>
+                <button class="btn btn-success btn-lg">Join now</button>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+
+    <!-- Start this security -->
+    <section class="container">
+        <div class="text-start text-lg-center py-5">
+            <h1 class="fw-bold mb-3">Green Conclave: Sustainable Development</h1>
+            <p class="mb-4">Promote eco-friendly practices and ensure sustainability with industry-leading green
+                initiatives.</p>
+            <button class="btn btn-success mb-5">Join the Movement</button>
+            <div class="row text-start">
+                <div class="col-12 col-md-6 d-flex align-items-start mb-4">
+                    <div class="me-3">
+                        <span class="badge bg-dark rounded-circle" style="padding: 8px;">
+                            <i class="bi bi-check-lg text-white"></i>
+                        </span>
+                    </div>
+                    <div>
+                        <h5 class="fw-bold">Carbon Footprint Reduction <span
+                                class="badge bg-success text-white">PREMIUM</span></h5>
+                        <p class="mb-0">Implement carbon offsetting measures and eco-friendly strategies to minimize
+                            your organization's environmental impact.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-start mb-4">
+                    <div class="me-3">
+                        <span class="badge bg-dark rounded-circle" style="padding: 8px;">
+                            <i class="bi bi-check-lg text-white"></i>
+                        </span>
+                    </div>
+                    <div>
+                        <h5 class="fw-bold">Renewable Energy Integration</h5>
+                        <p class="mb-0">Embrace renewable energy sources like solar and wind power to reduce dependency
+                            on fossil fuels.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-start mb-4">
+                    <div class="me-3">
+                        <span class="badge bg-dark rounded-circle" style="padding: 8px;">
+                            <i class="bi bi-check-lg text-white"></i>
+                        </span>
+                    </div>
+                    <div>
+                        <h5 class="fw-bold">Sustainable Practices <span class="badge bg-success text-dark">GREEN
+                                INITIATIVE</span></h5>
+                        <p class="mb-0">Incorporate zero-waste practices and resource-efficient processes to minimize
+                            environmental footprint.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-start mb-4">
+                    <div class="me-3">
+                        <span class="badge bg-dark rounded-circle" style="padding: 8px;">
+                            <i class="bi bi-check-lg text-white"></i>
+                        </span>
+                    </div>
+                    <div>
+                        <h5 class="fw-bold">Green Certifications</h5>
+                        <p class="mb-0">Achieve sustainability certifications and align your operations with global
+                            environmental standards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Green Conclave Trust & Sustainability Section -->
+    <section class="container-fluid p-0">
+        <div class="bg-success text-white py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Text Section -->
+                    <div class="col-12 col-lg-8 mb-4 mb-lg-0 text-start text-lg-start">
+                        <h2 class="fw-bold text-white">Trust & Sustainability in Green Conclave</h2>
+                        <p class="my-4">
+                            We are committed to fostering a sustainable future, ensuring that our products and practices
+                            support environmental stewardship and long-term ecological balance.
+                            Our Green Conclave is a hub for all things eco-friendly, offering solutions that benefit
+                            both the planet and business.
+                        </p>
+                        <div class="text-center text-lg-start">
+                            <button class="btn btn-light">Join the Green Movement</button>
+                        </div>
+                    </div>
+                    <!-- Image Section -->
+                    <div class="col-12 col-lg-4 text-center">
+                        <img src="img/trust_security.png" alt="Green Conclave" class="img-fluid rounded"
+                            style="max-height: 300px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End this security  -->
+
+
+    <!-- Start Event Date -->
+    <section class="container-fluid py-5">
+        <div class="container">
+            <h1 class="fw-bold mb-3 text-center">Green Conclave: Conference Schedule</h1>
+            <p class="mb-4 text-center">
+                Comprehensive schedule highlighting eco-friendly initiatives and industry-leading practices
+            </p>
+            <ul class="nav nav-pills justify-content-center mb-3 tab-buttons" role="tablist"
+                style="border-bottom: 4px solid #198754;">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#day1" type="button"
+                        role="tab">
+                        First Day<br>January 10, 2025
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#day2" type="button" role="tab">
+                        Second Day<br>January 11, 2025
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Day 1 Content -->
+                <div class="tab-pane fade show active" id="day1" role="tabpanel">
+                    <table class="table table-bordered border-success m-0">
+                        <thead class="table-light text-center border-success">
+                            <tr>
+                                <th style="vertical-align: middle;">Agenda</th>
+                                <th style="vertical-align: middle;">Topic</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Registration</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Inauguration</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Master Speaker</td>
+                                <td>From Ambition to Action - A global Case Study of Net Zero Implementation and Impact</td>
+                            </tr>
+                            <tr>
+                                <td>Panel 1 (3 panelists with moderator, 15 min speaking slot each, followed by panel/Q&A)
+                                </td>
+                                <td>Regulatory Landscapes: India and the World</td>
+                            </tr>
+                            <tr>
+                                <td>Panel 2 (3 panelists with moderator, 15 min speaking slot each, followed by panel/Q&A)
+                                </td>
+                                <td>Role of Energy Efficiency and Sustainable Cooling in Decarbonizing the Built Environment
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Master Speaker</td>
+                                <td>Achieving Net Zero through Design: A holistic approach to sustainable architecture</td>
+                            </tr>
+                            <tr>
+                                <td>SHUNYA Net Zero Awards & Circular Fashion Odyssey - Sustainable Fashion Show</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>CEO Round Table Conference</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Day 2 Content -->
+                <div class="tab-pane fade" id="day2" role="tabpanel">
+                    <table class="table table-bordered border-success m-0">
+                        <thead class="table-light text-center border-success">
+                            <tr>
+                                <th style="vertical-align: middle;">Agenda</th>
+                                <th style="vertical-align: middle;">Topic</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Registration</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Inauguration</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Master Speaker</td>
+                                <td>From Ambition to Action - A global Case Study of Net Zero Implementation and Impact</td>
+                            </tr>
+                            <tr>
+                                <td>Panel 1 (3 panelists with moderator, 15 min speaking slot each, followed by panel/Q&A)
+                                </td>
+                                <td>Regulatory Landscapes: India and the World</td>
+                            </tr>
+                            <tr>
+                                <td>Panel 2 (3 panelists with moderator, 15 min speaking slot each, followed by panel/Q&A)
+                                </td>
+                                <td>Role of Energy Efficiency and Sustainable Cooling in Decarbonizing the Built Environment
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Master Speaker</td>
+                                <td>Achieving Net Zero through Design: A holistic approach to sustainable architecture</td>
+                            </tr>
+                            <tr>
+                                <td>SHUNYA Net Zero Awards & Circular Fashion Odyssey - Sustainable Fashion Show</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>CEO Round Table Conference</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--End Event Date  -->
+
+
+    <!-- Pricing Start -->
+    <div class="container py-5">
+        <h2 class="text-center fw-bold mb-3">Pricing Plans</h2>
+        <p class="text-center mb-5">Choose a plan that fits your needs and unlock the full potential of <strong>Green
+                Conclave</strong>
+            for efficient task management and collaboration.</p>
+        <div class="row g-4">
+
+            <!-- Basic Plan -->
+            <div class="col-md-4 py-4">
+                <div class="card border-0 h-100 bg-success text-white rounded-0">
+                    <div class="card-body text-center position-relative px-4 py-5">
+                        <h5 class="card-title fw-bold">Title Partner</h5>
+                        <h2 class="fw-bold">15,00,000<span class="fs-6 fw-normal text-white-50"> / month</span></h2>
+                        <p class="my-3">Exclusive sponsorship for maximum visibility and engagement.</p>
+                        <h6 class="fw-bold">Features Included:</h6>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li class="mb-2">Meet & Greet with 25+ VVIPs</li>
+                            <li class="mb-2">Stall size: 8m x 2m</li>
+                            <li class="mb-2">25 Free Delegate Passes</li>
+                            <li class="mb-2">Logo at the top in all collateral</li>
+                            <li class="mb-2">5 Video Teasers</li>
+                            <li class="mb-2">Prominent website presence</li>
+                            <li class="mb-2">Social media and press coverage</li>
+                            <li class="mb-2">25 Free Delegate Passes</li>
+                            <li class="mb-2">Delegate data for two days</li>
+                            <li class="mb-2">Special mention in major branding</li>
+                            <!-- <li class="mb-2">Post-event mileage</li> -->
+                        </ul>
+                        <a href="#" class="btn btn-light w-100" style="border-radius: 8px;">Buy Now →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Standard Plan -->
+            <div class="col-md-4 py-4">
+                <div class="card border-0 h-100 pricing-card rounded-0">
+                    <div class="card-body text-center px-4 py-5">
+                        <div
+                            class="badge bg-light text-primary position-absolute top-0 start-50 translate-middle-x mt-4 px-3 py-1 fw-bold">
+                            Most Popular</div>
+                        <h5 class="card-title fw-bold mt-4">Platinum Partner</h5>
+                        <h2 class="fw-bold">10,00,000<span class="fs-6 fw-normal text-white-50"> / month</span></h2>
+                        <p class="my-3">Premium visibility with leading sponsorship benefits.</p>
+                        <h6 class="fw-bold">Features Included:</h6>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li class="mb-2"><span class="text-light">&#10004;</span> Meet & Greet with 20+ VVIPs</li>
+                            <li class="mb-2"><span class="text-light">&#10004;</span> Stall size: 6m x 2m</li>
+                            <li class="mb-2"><span class="text-light">&#10004;</span> 20 Free Delegate Passes</li>
+                            <li class="mb-2"><span class="text-light">&#10004;</span> Logo at second-top position in all
+                                collateral</li>
+                            <li class="mb-2"><span class="text-light">&#10004;</span> 4 Video Teasers</li>
+                            <li class="mb-2"><span class="text-light">&#10004;</span> Prominent website presence</li>
+                            <li class="mb-2"><span class="text-light">&#10004;</span> Social media and press coverage
+                            </li>
+                            <li class="mb-2"><span class="text-light">&#10004;</span> Delegate data for two days</li>
+                            <li class="mb-2"><span class="text-light">&#10004;</span> Post-event mileage</li>
+                        </ul>
+                        <a href="#" class="btn btn-success w-100" style="border-radius: 8px;">Buy Now →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="col-md-4 py-4">
+                <div class="card border-0 h-100 pricing-card rounded-0">
+                    <div class="card-body text-center px-4 py-5">
+                        <h5 class="card-title fw-bold">Gold Partner</h5>
+                        <h2 class="fw-bold">7,00,000<span class="fs-6 fw-normal"> / month</span></h2>
+                        <p class="my-3 text-muted">Strategic sponsorship with excellent exposure.</p>
+                        <h6 class="fw-bold">Features Included:</h6>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li class="mb-2"> Meet & Greet with 15+ VVIPs/li>
+                            <li class="mb-2"> Stall size: 4m x 2m</li>
+                            <li class="mb-2"> 15 Free Delegate Passes</li>
+                            <li class="mb-2"> Logo at third-top position in all collateral</li>
+                            <li class="mb-2"> 3 Video Teasers</li>
+                            <li class="mb-2"> Website presence</li>
+                            <li class="mb-2"> Social media and press coverage</li>
+                            <li class="mb-2"> Delegate data for two days</li>
+                            <li class="mb-2"> Post-event mileage</li>
+                        </ul>
+                        <a href="#" class="btn btn-success w-100" style="border-radius: 8px;">Buy Now →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Basic Plan -->
+            <div class="col-md-4 py-4">
+                <div class="card border-0 h-100 pricing-card rounded-0">
+                    <div class="card-body text-center px-4 py-5">
+                        <h5 class="card-title fw-bold">Silver Partner</h5>
+                        <h2 class="fw-bold">3,00,000<span class="fs-6 fw-normal"> / month</span></h2>
+                        <p class="my-3 text-muted">Support sustainability while showcasing your brand.</p>
+                        <h6 class="fw-bold">Features Included:</h6>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li class="mb-2"> Meet & Greet with 10+ VVIPs</li>
+                            <li class="mb-2"> Stall size: 3m x 2m</li>
+                            <li class="mb-2"> 10 Free Delegate Passes</li>
+                            <li class="mb-2"> Logo at fourth-top position in all collateral</li>
+                            <li class="mb-2"> 2 Video Teasers</li>
+                            <li class="mb-2"> Social media and press coverage</li>
+                            <li class="mb-2"> Delegate data for two days</li>
+                        </ul>
+                        <a href="#" class="btn btn-success w-100" style="border-radius: 8px;">Buy Now →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Standard Plan -->
+            <div class="col-md-4 py-4">
+                <div class="card border-0  h-100 pricing-card rounded-0">
+                    <div class="card-body text-center px-4 py-5">
+                        <h5 class="card-title fw-bold">Session Partner</h5>
+                        <h2 class="fw-bold">2,00,000<span class="fs-6 fw-normal"> / month</span></h2>
+                        <p class="my-3 text-muted">Sponsor a session and engage directly with the audience.</p>
+                        <h6 class="fw-bold">Features Included:</h6>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li class="mb-2">Meet & Greet with 7+ VVIPs</li>
+                            <li class="mb-2">Stall size: 2m x 2m</li>
+                            <li class="mb-2">7 Free Delegate Passes</li>
+                            <li class="mb-2">Logo at fourth-top position in session invitations and collateral</li>
+                            <li class="mb-2">1 Video Teaser</li>
+                            <li class="mb-2">Website presence</li>
+                            <li class="mb-2">Social media and press coverage</li>
+                            <li class="mb-2">Delegate data for two days</li>
+                            <li class="mb-2">Post-event mileage</li>
+                        </ul>
+                        <a href="#" class="btn btn-success w-100" style="border-radius: 8px;">Buy Now →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="col-md-4 py-4">
+                <div class="card border-0  h-100 pricing-card rounded-0">
+                    <div class="card-body text-center px-4 py-5">
+                        <h5 class="card-title fw-bold">Other Sponsorships</h5>
+                        <h2 class="fw-bold">Custom Pricing</h2>
+                        <p class="my-3 text-muted">nique sponsorship opportunities to fit your brand.</p>
+                        <h6 class="fw-bold">Options Include:</h6>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li class="mb-2">Gala Dinner Partner – ₹3,00,000</li>
+                            <li class="mb-2">Hospitality Partner – ₹3,00,000</li>
+                            <li class="mb-2">Award Partner – ₹5,00,000</li>
+                            <li class="mb-2">CEOs Roundtable Partner – ₹5,00,000</li>
+                            <li class="mb-2">Lanyard Partner – ₹2,00,000</li>
+                            <li class="mb-2">Fleet Partner – ₹3,00,000</li>
+                            <li class="mb-2">Stall Partner – ₹1,50,000</li>
+                            <li class="mb-2">Apparel Partner – ₹2,50,000</li>
+                        </ul>
+                        <a href="#" class="btn btn-success w-100" style="border-radius: 8px;">Buy Now →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing End -->
+
+
+    <!-- Start Award  -->
+    <section class="container-fluid bg-light p-0">
+        <!-- Hero Section -->
+        <div class="text-center text-white py-5" style="background: linear-gradient(45deg, #25BFDB, #9CBC41);">
+            <h1 class="fw-bold">Five Element Awards</h1>
+            <p class="lead">Celebrating Innovations for a Sustainable Future</p>
+        </div>
+
+        <!-- Categories Section -->
+        <div class="container py-5">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Introducing New Award Categories</h2>
+                <p class="text-muted">Recognizing advancements in sustainability and innovation</p>
+            </div>
+            <div class="row g-4 py-4">
+                <!-- Netzero Design Accelerator Award -->
+                <div class="col-12 col-sm-6 col-lg-4 px-3 py-2">
+                    <div class="award-card rounded-0">
+                        <img src="img/index_images/coding (1).png" alt="Design Accelerator Award" class="award-icon">
+                        <h5 class="fw-bold">Netzero Design Accelerator Award</h5>
+                        <p class="text-muted mb-0">Recognizing innovative and forward-thinking designs that contribute
+                            to achieving net-zero goals in architecture and construction.</p>
+                    </div>
+                </div>
+                <!-- Net Zero Accelerator Award for Sustainable Cooling -->
+                <div class="col-12 col-sm-6 col-lg-4 px-3 py-2">
+                    <div class="award-card rounded-0">
+                        <img src="img/index_images/app-development.jpg" alt="Sustainable Cooling Award"
+                            class="award-icon">
+                        <h5 class="fw-bold">Net Zero Accelerator Award for Sustainable Cooling</h5>
+                        <p class="text-muted mb-0">Awarded for advancements in sustainable cooling technologies that
+                            support energy-efficient and low-carbon cooling systems.</p>
+                    </div>
+                </div>
+                <!-- Net Zero Energy Accelerator Award in Cold Chain Sector -->
+                <div class="col-12 col-sm-6 col-lg-4 px-3 py-2">
+                    <div class="award-card rounded-0">
+                        <img src="img/index_images/calendar.png" alt="Cold Chain Sector Award" class="award-icon">
+                        <h5 class="fw-bold">Net Zero Energy Accelerator Award in Cold Chain Sector</h5>
+                        <p class="text-muted mb-0">Honoring initiatives that drive energy efficiency and sustainability
+                            in the cold chain sector, focusing on reducing energy consumption and emissions.</p>
+                    </div>
+                </div>
+                <!-- Innovative Technology/Product for Netzero Acceleration in Built Environment -->
+                <div class="col-12 col-sm-6 col-lg-4 px-3 py-2">
+                    <div class="award-card rounded-0">
+                        <img src="img/index_images/completed-task.png" alt="Technology/Product Award"
+                            class="award-icon">
+                        <h5 class="fw-bold">Innovative Technology/Product for Netzero Acceleration in Built Environment
+                        </h5>
+                        <p class="text-muted mb-0">Recognizing technologies or products that significantly contribute to
+                            reducing energy consumption, water usage.</p>
+                    </div>
+                </div>
+                <!-- Sustainability Leadership Award for Accelerating Netzero -->
+                <div class="col-12 col-sm-6 col-lg-4 px-3 py-2">
+                    <div class="award-card rounded-0">
+                        <img src="img/index_images/sw_implemention.jpg" alt="Leadership Award" class="award-icon">
+                        <h5 class="fw-bold">Sustainability Leadership Award for Accelerating Netzero</h5>
+                        <p class="text-muted mb-0">Awarded to leaders and organizations that have shown exemplary
+                            leadership in driving the transition to net-zero carbon emissions.</p>
+                    </div>
+                </div>
+                <!-- Netzero Water Accelerator Award -->
+                <div class="col-12 col-sm-6 col-lg-4 px-3 py-2">
+                    <div class="award-card rounded-0">
+                        <img src="img/index_images/sw_training.jpg" alt="Water Accelerator Award" class="award-icon">
+                        <h5 class="fw-bold">Netzero Water Accelerator Award</h5>
+                        <p class="text-muted mb-0">Recognizing innovative solutions in water management, conservation,
+                            and reuse that contribute to achieving net-zero water goals.</p>
+                    </div>
+                </div>
+                <!-- Netzero Waste Accelerator Award -->
+                <div class="col-12 col-sm-6 col-lg-4 px-3 py-2">
+                    <div class="award-card rounded-0">
+                        <img src="img/index_images/coding (1).png" alt="Waste Accelerator Award" class="award-icon">
+                        <h5 class="fw-bold">Netzero Waste Accelerator Award</h5>
+                        <p class="text-muted mb-0">Honoring organizations and initiatives that excel in waste reduction,
+                            recycling, and circular economy practices towards achieving zero waste.</p>
+                    </div>
+                </div>
+                <!-- Netzero Carbon Accelerator Award -->
+                <div class="col-12 col-sm-6 col-lg-4 px-3 py-2">
+                    <div class="award-card rounded-0">
+                        <img src="img/index_images/visionary.png" alt="Carbon Accelerator Award" class="award-icon">
+                        <h5 class="fw-bold">Netzero Carbon Accelerator Award</h5>
+                        <p class="text-muted mb-0">Awarded for outstanding efforts to eliminate carbon emissions through
+                            innovative technologies, strategies, and programs that contribute to carbon neutrality.</p>
+                    </div>
+                </div>
+                <!-- Netzero Innovation Excellence Award -->
+                <div class="col-12 col-sm-6 col-lg-4 px-3 py-2">
+                    <div class="award-card rounded-0">
+                        <img src="img/index_images/sw_implemention.jpg" alt="Innovation Excellence Award"
+                            class="award-icon">
+                        <h5 class="fw-bold">Netzero Innovation Excellence Award</h5>
+                        <p class="text-muted mb-0">Recognizing groundbreaking innovations and technologies that
+                            accelerate progress towards achieving net-zero goals in various sectors.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Award -->
+
+
+    <!-- FAQs Start -->
+    <div class="container-fluid py-3">
+        <div class="container pb-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="mb-5">Frequently Asked Questions</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionGreenConclave1">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    What is the Green Conclave?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionGreenConclave1">
+                                <div class="accordion-body">
+                                    The Green Conclave is an initiative focused on promoting sustainable practices,
+                                    eco-friendly innovations, and environmental awareness.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Who can participate in the Green Conclave?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionGreenConclave1">
+                                <div class="accordion-body">
+                                    Anyone passionate about sustainability, including individuals, businesses, and
+                                    organizations, can participate in the Green Conclave.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.3s">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What activities are included in the Green Conclave?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionGreenConclave1">
+                                <div class="accordion-body">
+                                    Activities include workshops, panel discussions, networking sessions, and
+                                    exhibitions showcasing green technologies and practices.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    How can I register for the Green Conclave?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionGreenConclave1">
+                                <div class="accordion-body">
+                                    You can register online via our official website by filling out the registration
+                                    form and submitting the required details.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionGreenConclave2">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Are there any fees to attend the Green Conclave?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionGreenConclave2">
+                                <div class="accordion-body">
+                                    The event may have free and paid sessions, depending on the activities and
+                                    workshops. Details will be shared during registration.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.6s">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    How does the Green Conclave promote sustainability?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionGreenConclave2">
+                                <div class="accordion-body">
+                                    By showcasing sustainable solutions, encouraging eco-conscious practices, and
+                                    fostering collaboration for a greener future.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.7s">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    What industries are involved in the Green Conclave?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                data-bs-parent="#accordionGreenConclave2">
+                                <div class="accordion-body">
+                                    Industries like renewable energy, sustainable construction, waste management, and
+                                    eco-friendly manufacturing participate in the conclave.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.8s">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    How can I volunteer for the Green Conclave?
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionGreenConclave2">
+                                <div class="accordion-body">
+                                    Volunteers can apply through the website by submitting their profiles and selecting
+                                    preferred roles during the event.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQs End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn px-2" data-wow-delay="0.1s">
+                    <h2 class="mb-0 text-white">
+                        GREEN <br>
+                        <span class="fw-bold" style="color: #ffb905;">CONCLAVE 25</span>
+                    </h2>
+                    <p class="mb-0 pt-2">Green Conclave is dedicated to delivering sustainable, eco-friendly solutions,
+                        fostering innovation, and driving positive environmental impact while promoting growth,
+                        efficiency, and a greener future for communities and businesses worldwide.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeInLeftBig" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">Popular Link</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="about.html">Projects</a>
+                    <a class="btn btn-link" href="service.html">Services</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="1.3s">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <a class="btn btn-link" href="">Sustainable Energy Solutions</a>
+                    <a class="btn btn-link" href="">Eco-Friendly Consulting</a>
+                    <a class="btn btn-link" href="">Green Building Design</a>
+                    <a class="btn btn-link" href="">Renewable Energy Integration</a>
+                    <a class="btn btn-link" href="">Environmental Impact Assessments</a>
+                    <a class="btn btn-link" href="">Waste Management Solutions</a>
+                    <a class="btn btn-link" href="">Carbon Footprint Reduction Plans</a>
+
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="1.8s">
+                    <h5 class="text-white mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Office no 90–92, 4th Floor, 'D' Wing, K K Market,
+                        Pune-Satara Road, Dhankawadi, Pune 411 043</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+91 9922954841</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+91 9922954842</p>
+                    <p><i class="fa fa-envelope me-3"></i>coordinator@greenconclave.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.linkedin.com/company/leal-software-solution/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/LealSoftwareSolution"
+                            target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.youtube.com/@lealsoftwaresolutionpvtltd8833" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/smurkewar/"
+                            target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="https://wa.me/7410016111" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="index.html">All Right Reserved.</a>
+                        | Designed By Leal Software Solution Pvt Ltd<a class="border-bottom"
+                            href="https://www.lealsolution.com/" target="_blank"></a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FAQs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

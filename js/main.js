@@ -64,24 +64,24 @@
 })(jQuery);
 
 // here code for index page  
-function showContent(day) {
-    const content1 = document.getElementById('content1');
-    const content2 = document.getElementById('content2');
+// function showContent(day) {
+//     const content1 = document.getElementById('content1');
+//     const content2 = document.getElementById('content2');
 
-    if (day === 1) {
-        content1.style.display = 'block';
-        content2.style.display = 'none';
-    } else {
-        content1.style.display = 'none';
-        content2.style.display = 'block';
-    }
-}
+//     if (day === 1) {
+//         content1.style.display = 'block';
+//         content2.style.display = 'none';
+//     } else {
+//         content1.style.display = 'none';
+//         content2.style.display = 'block';
+//     }
+// }
 
 //**  A code for event 1 page for YouTube Video ***//
-const youtubeVideo = document.getElementById('youtubeVideo');
+// const youtubeVideo = document.getElementById('youtubeVideo');
 
-youtubeVideo.addEventListener('click', () => {
-    const videoUrl = "https://www.youtube.com/embed/-_-hezIflJo?autoplay=1";
-    youtubeVideo.src = videoUrl;
-});
+// youtubeVideo.addEventListener('click', () => {
+//     const videoUrl = "https://www.youtube.com/embed/-_-hezIflJo?autoplay=1";
+//     youtubeVideo.src = videoUrl;
+// });
 
